@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan Pirzada | AI Enthusiast</title>
+    <meta name="description" content="Portfolio of Azan Pirzada - CS Student passionate about AI and Machine Learning.">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="hero-image.webp" as="image">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=3">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Spline 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.32/build/spline-viewer.js"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated background elements -->
+        <div class="hero-bg-effects" data-speed="0.2">
+            <div class="floating-circle circle-1" data-speed="0.5"></div>
+            <div class="floating-circle circle-2" data-speed="-0.3"></div>
+            <div class="floating-circle circle-3" data-speed="0.4"></div>
+        </div>
+
+        <!-- Hero content -->
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-label animate-text">Hello, I'm Azan Pirzada</span>
+                <h1 class="hero-title animate-text delay-1">
+                    Building <span class="accent-text">Intelligence</span><br>
+                    Solving <span class="accent-text">Problems</span>
+                </h1>
+                <p class="hero-headline animate-text delay-2">
+                    Computer Science Student specializing in AI, Data Science, and building algorithmic solutions for
+                    complex challenges.
+                </p>
+
+                <div class="hero-buttons animate-text delay-3">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me <ion-icon name="chatbubble-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <div class="social-links animate-text delay-4">
+                    <a href="https://www.linkedin.com/in/azan-pirzada00" target="_blank" class="magnetic"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/azanahmed000" target="_blank" class="magnetic"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                    <a href="https://x.com/azan96809" target="_blank" class="magnetic"><ion-icon
+                            name="logo-twitter"></ion-icon></a>
+                    <a href="https://discord.com/users/1286348300148019233" target="_blank" class="magnetic">
+                        <span class="discord-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.082.115 18.105.134 18.12a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3D Spline Robot -->
+            <div class="hero-robot">
+                <div class="robot-container">
+                    <!-- Glow Effect Behind Robot -->
+                    <div class="robot-glow"></div>
+
+                    <!-- Spline 3D Viewer - Lazy Loaded -->
+                    <spline-viewer url="https://prod.spline.design/TLqewVdBAyZGxLPe/scene.splinecode" loading="lazy">
+                    </spline-viewer>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee Text -->
+        <div class="marquee-container" data-speed="-0.5">
+            <div class="marquee-content">
+                <span>DEVELOPER • DESIGNER • AI ENTHUSIAST • INNOVATOR • </span>
+                <span>DEVELOPER • DESIGNER • AI ENTHUSIAST • INNOVATOR • </span>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>About <span class="accent-text">Me</span></h2>
+            </div>
+            <div class="about-wrapper">
+                <div class="about-image animate-on-scroll">
+                    <img src="hero-image.webp" alt="Azan Pirzada">
+                    <div class="about-image-border"></div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I chose Computer Science to understand how intelligence is built, not just how it's used. I'm
+                        particularly interested in algorithms, machine learning systems, and the way data-driven models
+                        learn, adapt, and improve over time.
+                    </p>
+                    <p>
+                        My focus is on building practical AI solutions by combining strong fundamentals with hands-on
+                        experimentation. I enjoy turning ideas into working systems and continuously refining them
+                        through real-world data and feedback.
+                    </p>
+                    <p>
+                        I'm always open to connecting, collaborating, and learning through modern tech tools. If you're
+                        working on something interesting or exploring applied AI, feel free to reach out.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Focus Section -->
+    <section id="focus" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Areas of <span class="accent-text">Focus</span></h2>
+                <p class="section-subtitle">What I specialize in</p>
+            </div>
+
+            <div class="focus-grid">
+                <!-- Machine Learning -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Supervised and unsupervised learning. Model training, evaluation, and optimization. Feature
+                        engineering and preprocessing.</p>
+                </div>
+
+                <!-- Data Science -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">🔬</div>
+                    <h3>Data Science</h3>
+                    <p>Exploratory data analysis (EDA). Data-driven insights from real datasets. Connecting data
+                        patterns to practical outcomes.</p>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <p>Data cleaning and transformation. Visualization and reporting. Supporting decision-making with
+                        data.</p>
+                </div>
+
+                <!-- Problem Solving & DSA -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">⚡</div>
+                    <h3>Problem Solving & DSA</h3>
+                    <p>Core data structures. Algorithmic thinking. Logical problem breakdown and efficient solutions.
+                    </p>
+                </div>
+
+                <!-- Database Management -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <p>Designing and querying relational databases. Writing optimized SQL. Managing data pipelines with PostgreSQL.</p>
+                </div>
+
+                <!-- Computer Vision -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">👁️</div>
+                    <h3>Computer Vision</h3>
+                    <p>Image classification, object detection, and feature extraction using CNNs and deep learning architectures.</p>
+                </div>
+
+                <!-- Deep Learning -->
+                <div class="focus-card animate-on-scroll">
+                    <div class="focus-icon">🧠</div>
+                    <h3>Deep Learning</h3>
+                    <p>Building neural networks with TensorFlow and PyTorch. Training CNNs, optimizing models, and applying transfer learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>My <span class="accent-text">Skills</span></h2>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Programming Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        Programming Languages
+                    </h3>
+                    <div class="category-skills">
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL / PostgreSQL</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Libraries & Frameworks -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        Libraries & Frameworks
+                    </h3>
+                    <div class="category-skills">
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <ion-icon name="build-outline"></ion-icon>
+                        Tools & Platforms
+                    </h3>
+                    <div class="category-skills">
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Visualization</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Canva Design</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Generative AI</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Excel</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="category-title">
+                        <ion-icon name="bulb-outline"></ion-icon>
+                        Core Competencies
+                    </h3>
+                    <div class="category-skills">
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Analytical Thinking</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Business Problem Solving</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">Problem Solving</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-thin">
+                            <div class="skill-info">
+                                <span class="skill-name">AI Prompting</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-thin">
+                                <div class="skill-progress-thin" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Explained Section -->
+    <section id="skills-explained" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Learn About <span class="accent-text">My Skills</span></h2>
+                <p class="section-subtitle">Click to explore what each skill is about</p>
+            </div>
+
+            <div class="skills-cards-grid">
+                <!-- Machine Learning -->
+                <a href="https://www.ibm.com/think/topics/machine-learning" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>AI systems that learn from data and improve over time without explicit programming.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- TensorFlow -->
+                <a href="https://www.tensorflow.org/learn" target="_blank" class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🧠</div>
+                    <h3>TensorFlow</h3>
+                    <p>Google's open-source platform for building and deploying ML models at scale.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Data Analysis -->
+                <a href="https://aws.amazon.com/what-is/data-analytics/" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <p>Inspecting, cleaning, and modeling data to discover useful insights and inform decisions.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Data Science -->
+                <a href="https://aws.amazon.com/what-is/data-science/" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🔬</div>
+                    <h3>Data Science</h3>
+                    <p>Extracting knowledge from structured and unstructured data using scientific methods.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- DSA -->
+                <a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/"
+                    target="_blank" class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">⚡</div>
+                    <h3>DSA</h3>
+                    <p>Data Structures & Algorithms - the foundation of efficient problem solving in programming.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Generative AI -->
+                <a href="https://aws.amazon.com/what-is/generative-ai/" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">💬</div>
+                    <h3>Generative AI</h3>
+                    <p>Leveraging AI models to create content, automate tasks, and solve complex problems.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Microsoft Excel -->
+                <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">📈</div>
+                    <h3>Microsoft Excel</h3>
+                    <p>Advanced data organization, analysis, and visualization for actionable business insights.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- PyTorch -->
+                <a href="https://pytorch.org/" target="_blank" class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🔥</div>
+                    <h3>PyTorch</h3>
+                    <p>Meta's deep learning framework for building and training neural networks with dynamic computation graphs.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- SQL / PostgreSQL -->
+                <a href="https://www.postgresql.org/about/" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🗄️</div>
+                    <h3>SQL / PostgreSQL</h3>
+                    <p>Writing structured queries to manage, filter, and analyze relational databases with precision.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Vibe Coding -->
+                <a href="https://en.wikipedia.org/wiki/Vibe_coding" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🎨</div>
+                    <h3>Vibe Coding</h3>
+                    <p>Using AI assistants to generate code by describing what you want in natural language.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Canva Design -->
+                <a href="https://www.canva.com/designschool/" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🎭</div>
+                    <h3>Canva Design</h3>
+                    <p>Creating stunning visual content using Canva's intuitive design platform.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Computer Vision -->
+                <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">👁️</div>
+                    <h3>Computer Vision</h3>
+                    <p>Teaching machines to interpret visual data — image classification, object detection, and CNNs.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+
+                <!-- Deep Learning -->
+                <a href="https://www.ibm.com/think/topics/deep-learning" target="_blank"
+                    class="skill-detail-card animate-on-scroll">
+                    <div class="skill-card-icon">🧠</div>
+                    <h3>Deep Learning</h3>
+                    <p>Multi-layer neural networks for complex pattern recognition, trained on large datasets with GPU acceleration.</p>
+                    <span class="learn-more">Learn More →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>My <span class="accent-text">Experience</span></h2>
+            </div>
+
+            <div class="experience-timeline">
+
+                <!-- Fluxxion Internship -->
+                <div class="experience-card animate-on-scroll">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <h3 class="exp-role">Data Analytics Intern</h3>
+                            <span class="exp-company">Fluxxion</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-date">Dec 2025 – Jan 2026</span>
+                            <span class="exp-type">Remote</span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Performed data cleaning, exploratory analysis, and insight generation on structured datasets
+                        </li>
+                        <li>Applied analytical reasoning to extract meaningful patterns under task deadlines</li>
+                        <li>Worked within real-world constraints beyond academic exercises</li>
+                    </ul>
+
+                    <div class="exp-footer">
+                        <div class="exp-outcome">
+                            <span class="outcome-label">Outcome:</span> Internship completed with 83.33% performance
+                            score and 80% attendance
+                        </div>
+                        <div class="exp-skills">
+                            <span class="exp-skill-tag">Data Analysis</span>
+                            <span class="exp-skill-tag">Analytical Thinking</span>
+                            <span class="exp-skill-tag">Microsoft Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deloitte Virtual Internship -->
+                <div class="experience-card animate-on-scroll">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <div class="exp-title-row">
+                                <h3 class="exp-role">Virtual Intern – Data Analytics</h3>
+                                <span class="exp-tag-virtual">Forage Simulation</span>
+                            </div>
+                            <span class="exp-company">Deloitte</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-date">Dec 2025</span>
+                            <span class="exp-type">Remote</span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Completed a Deloitte-led data analytics job simulation based on real business scenarios</li>
+                        <li>Analyzed datasets to identify patterns, risks, and insights in forensic and analytical
+                            contexts</li>
+                        <li>Practiced structured problem-solving aligned with client-focused decision-making</li>
+                    </ul>
+
+                    <div class="exp-footer">
+                        <div class="exp-skills">
+                            <span class="exp-skill-tag">Data Analysis</span>
+                            <span class="exp-skill-tag">Microsoft Excel</span>
+                            <span class="exp-skill-tag">Business Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datacom Virtual Internship -->
+                <div class="experience-card animate-on-scroll">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <div class="exp-title-row">
+                                <h3 class="exp-role">Virtual Intern – Partnering with AI</h3>
+                                <span class="exp-tag-virtual">Forage Simulation</span>
+                            </div>
+                            <span class="exp-company">Datacom</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-date">Dec 2025</span>
+                            <span class="exp-type">Remote</span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>Used generative AI tools for research, writing, and feature planning in workplace-style
+                            tasks</li>
+                        <li>Created client-ready reports and presentations by refining AI-generated outputs</li>
+                        <li>Diagnosed and validated website form issues through AI-guided troubleshooting</li>
+                    </ul>
+
+                    <div class="exp-footer">
+                        <div class="exp-skills">
+                            <span class="exp-skill-tag">Generative AI</span>
+                            <span class="exp-skill-tag">Problem Solving</span>
+                            <span class="exp-skill-tag">AI Prompting</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>My <span class="accent-text">Certificates</span></h2>
+            </div>
+
+            <div class="certificates-wrapper collapsed" id="certs-wrapper">
+                <div class="certificates-grid">
+                    <!-- Fluxxion Virtual Internship -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Fluxxion.png" alt="Fluxxion Certificate">
+                        </div>
+                        <h4>Data Analysis Intern</h4>
+                        <p>Fluxxion.dev</p>
+                    </a>
+
+                    <!-- Deloitte Virtual Internship -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Deliote.png" alt="Deloitte Certificate">
+                        </div>
+                        <h4>Data Analytics</h4>
+                        <p>Deloitte</p>
+                    </a>
+
+                    <!-- Datacom Virtual Internship -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Datacom.png" alt="Datacom Certificate">
+                        </div>
+                        <h4>Partnering with AI</h4>
+                        <p>Datacom</p>
+                    </a>
+
+                    <!-- Kaggle Data Visualization -->
+                    <a href="https://www.kaggle.com/learn/certification/azanpirzada/data-visualization" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="AZAN Pirzada - Data Visualization.png"
+                                alt="Data Visualization Certificate">
+                        </div>
+                        <h4>Data Visualization</h4>
+                        <p>Kaggle</p>
+                    </a>
+
+                    <!-- Kaggle Pandas -->
+                    <a href="https://www.kaggle.com/learn/certification/azanpirzada/pandas" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="AZAN Pirzada - Pandas.png" alt="Pandas Certificate">
+                        </div>
+                        <h4>Pandas</h4>
+                        <p>Kaggle</p>
+                    </a>
+
+                    <!-- AI for Everyone -->
+                    <a href="https://www.coursera.org/account/accomplishments/verify/464OUSGY8LG0" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera 464OUSGY8LG0 conv 1.png"
+                                alt="AI for Everyone Certificate">
+                        </div>
+                        <h4>AI for Everyone</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Supervised Machine Learning -->
+                    <a href="https://www.coursera.org/account/accomplishments/verify/7VKC1B89ZFR3" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera 840XOYZAH1GY conv 1.png"
+                                alt="Supervised Machine Learning Certificate">
+                        </div>
+                        <h4>Supervised Machine Learning</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Unsupervised Learning -->
+                    <a href="https://www.coursera.org/account/accomplishments/verify/DQ9M6TYDV9Y4" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera DQ9M6TYDV9Y4 conv 1.png"
+                                alt="Unsupervised Learning Certificate">
+                        </div>
+                        <h4>Unsupervised Learning</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Advanced Learning Algorithms -->
+                    <a href="https://www.coursera.org/account/accomplishments/verify/EUVVTUUH94WG" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera EUVVTUUH94WG conv 1.png"
+                                alt="Advanced Learning Algorithms Certificate">
+                        </div>
+                        <h4>Advanced Learning Algorithms</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Machine Learning Specialization -->
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/G4SCIVMLSNI1"
+                        target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera G4SCIVMLSNI1 conv 1.png"
+                                alt="Machine Learning Specialization Certificate">
+                        </div>
+                        <h4>Machine Learning Specialization</h4>
+                        <p>Stanford Online</p>
+                    </a>
+
+                    <!-- Google AI Essentials -->
+                    <a href="https://www.coursera.org/account/accomplishments/verify/T4Q1STL42UJN" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Coursera T4Q1STL42UJN conv 1.png"
+                                alt="Google AI Essentials Certificate">
+                        </div>
+                        <h4>Google AI Essentials</h4>
+                        <p>Google</p>
+                    </a>
+
+                    <!-- Data Structures and Algorithms -->
+                    <a href="https://www.udemy.com/certificate/UC-d722d659-4336-41e3-997b-30a7d9973aeb/" target="_blank"
+                        class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="UC-d722d659-4336-41e3-997b-30a7d9973aeb conv 1.png"
+                                alt="Data Structures and Algorithms Certificate">
+                        </div>
+                        <h4>Data Structures & Algorithms</h4>
+                        <p>Udemy</p>
+                    </a>
+
+                    <!-- Deep Learning Specialization - Course 1 -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="deep learning sp 1 conv 1.png"
+                                alt="Deep Learning Specialization Course 1 Certificate">
+                        </div>
+                        <h4>Neural Networks & Deep Learning</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Deep Learning Specialization - Course 2 -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="Deep learning sp 2 conv 1.png"
+                                alt="Deep Learning Specialization Course 2 Certificate">
+                        </div>
+                        <h4>Improving Deep Neural Networks</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Deep Learning Specialization - Course 3 -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="deep learning sp 3 conv 1.png"
+                                alt="Deep Learning Specialization Course 3 Certificate">
+                        </div>
+                        <h4>Structuring ML Projects</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+
+                    <!-- Deep Learning Specialization - Course 4 -->
+                    <a href="#" target="_blank" class="cert-card animate-on-scroll">
+                        <div class="cert-image-preview">
+                            <img loading="lazy" src="deep learning sp 4 conv 1.png"
+                                alt="Deep Learning Specialization Course 4 Certificate">
+                        </div>
+                        <h4>Convolutional Neural Networks</h4>
+                        <p>DeepLearning.AI</p>
+                    </a>
+                </div>
+
+                <div class="certificates-fade"></div>
+            </div>
+
+            <div class="certificates-actions">
+                <button id="toggle-certs-btn" class="btn btn-outline">
+                    <ion-icon name="chevron-down-outline"></ion-icon> View All Certificates
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Latest <span class="accent-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Movie Recommendation System -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-visual">
+                        <video autoplay muted loop playsinline preload="none" poster="hero-image.webp">
+                            <source src="Untitled design.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Movie Recommendation System</h3>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Sklearn</span>
+                            <span>SQL</span>
+                        </div>
+                        <p>ML-powered system that suggests movies based on user preferences using content-based
+                            filtering.</p>
+                        <div class="project-impact">
+                            <ion-icon name="flash-outline" class="impact-icon"></ion-icon>
+                            <span>Impact: Optimized recommendation accuracy by 40%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reviews Submission Section -->
+    <section id="reviews" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Leave a <span class="accent-text">Review</span></h2>
+                <p class="section-subtitle">Share your experience working with me</p>
+            </div>
+
+            <div class="review-form-wrapper animate-on-scroll">
+                <div class="review-form-info">
+                    <h3>Your Feedback Matters</h3>
+                    <p>Whether we've collaborated on a project, worked together, or connected professionally — I'd love
+                        to hear your thoughts.</p>
+                    <p class="review-note">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        Reviews are moderated before appearing on the site.
+                    </p>
+                    <a href="reviews.html" class="btn btn-outline">
+                        <ion-icon name="star-outline"></ion-icon>
+                        View All Reviews
+                    </a>
+                </div>
+
+                <form id="review-form" class="review-form">
+                    <div class="form-group">
+                        <input type="text" name="reviewer_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="reviewer_role"
+                            placeholder="Your Role / Relationship (e.g., Mentor, Peer, Client) — Optional">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="review_message" placeholder="Your Review" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="review-submit-btn" class="btn btn-primary">
+                        <ion-icon name="send-outline"></ion-icon>
+                        <span class="btn-text">Submit Review</span>
+                        <span class="btn-loading" style="display: none;">Submitting...</span>
+                    </button>
+                    <div id="review-form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding section-alt">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Contact <span class="accent-text">Me</span></h2>
+            </div>
+
+            <div class="contact-wrapper animate-on-scroll">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Have a question or want to work together? Feel free to reach out!</p>
+
+                    <div class="contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>azan96809@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Muzaffarabad, Azad Jammu and Kashmir</span>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/azan-pirzada00" target="_blank"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                        <a href="https://github.com/azanahmed000" target="_blank"><ion-icon
+                                name="logo-github"></ion-icon></a>
+                        <a href="https://x.com/azan96809" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://discord.com/users/1286348300148019233" target="_blank">
+                            <span class="discord-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.082.115 18.105.134 18.12a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone (optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary">
+                        <ion-icon name="send-outline"></ion-icon>
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Azan Pirzada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal-backdrop" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <img src="" alt="Certificate View" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
